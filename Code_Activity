@@ -1,0 +1,51 @@
+using System;
+
+namespace Primeiro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int tamanho = 10;
+            int[] numeros = new int[tamanho];
+
+            for (int i = 0; i < tamanho; i++)
+            {
+                Console.Write("Crie um conjunto de 10 números, digitando um por vez: ");
+                numeros[i] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < tamanho; i++)
+            {
+                Console.WriteLine("Valor: " + numeros[i] + " Posição: " + i);
+            }
+            {
+                Console.WriteLine("Digite um valor para verificar se existe no vetor criado: ");
+                int busca_numeros = int.Parse(Console.ReadLine());
+                int achou = 0;
+
+                for (int i = 0; i < tamanho; i++)
+                    if (busca_numeros == numeros[i])
+                {
+                        achou = 1;
+                }
+                    if (achou ==1)
+                {
+                    Console.WriteLine("O numero " + busca_numeros + " foi encontrado com sucesso!");
+                    if(busca_numeros%2==0)
+                    {
+                        Console.WriteLine("O numero " + busca_numeros + " é par!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("O numero " + busca_numeros + " é impar!");
+                    }
+                }
+                    else
+                {
+                    Console.WriteLine("O numero " + busca_numeros + " não foi encontrado");
+                }
+            }
+            
+        }
+    }
+}
