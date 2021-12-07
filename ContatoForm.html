@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>--Formulário Contato--</title>
+<meta charset = "utf-8" />
+<link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+<meta name="viewport" content="width=device-width">
+<style>
+  img {
+      max-width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+<form name="meu_form">
+
+  <h1>Entre em contato</h1>
+
+  <input type = "text" id="idcliente" placeholder="000000" required="required" name="id" />
+  <label for="id">ID</label>
+
+  <input type = "text" id="nomecliente" placeholder="Eduardo" required="required" name="nome" />
+  <label for="nome">Nome</label>
+
+  <input type = "text" id="rg" placeholder="xx.xxx.xxx-x" name="rg" />
+  <label for="rg">RG</label>
+
+  <input type = "text" id="cpfid" placeholder="xxx.xxx.xxx-xx" name="cpf" />
+  <label for="cpf">Cpf</label>
+
+  <input type = "text" id="enderecoid" placeholder="Rua XXXXXXX" name="endereco" />
+  <label for="endereco">Endereco</label>
+    
+  <input type = "text" id="produtoid" placeholder="xxxxx" name="produto" />
+  <label for="produto">Produto</label>
+
+  <input type = "text" id="precovendaid" placeholder="R$ xxxxxx,xx" name="precovenda" />
+  <label for="precovenda">PrecoVenda</label>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</form>
+</body>
+</html>
